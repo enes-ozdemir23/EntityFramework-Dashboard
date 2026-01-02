@@ -1,0 +1,234 @@
+﻿INSERT INTO Categories (CategoryName, CategoryStatus) VALUES
+('Bilgisayar', 1),
+('Laptop', 1),
+('Masaüstü Bilgisayar', 1),
+('Monitör', 1),
+('Klavye', 1),
+('Mouse', 1),
+('Yazıcı', 1),
+('Tarayıcı', 1),
+('Ağ Ürünleri', 1),
+('Sunucu Donanımları', 1),
+('Depolama Ürünleri', 1),
+('Harici Disk', 1),
+('SSD', 1),
+('RAM', 1),
+('Ekran Kartı', 1),
+('Anakart', 1),
+('İşlemci', 1),
+('Güç Kaynağı', 1),
+('Kasa', 1),
+('Aksesuar', 1);
+--------------------------------------
+INSERT INTO Customers
+(CustomerName, CustomerSurname, CustomerCity, CustomerDistrict, CustomerBalance)
+VALUES
+('Ahmet', 'Yılmaz', 'İstanbul', 'Kadıköy', 12500.50),
+('Mehmet', 'Demir', 'Ankara', 'Çankaya', 8400.00),
+('Ayşe', 'Kara', 'İzmir', 'Bornova', 5600.75),
+('Fatma', 'Çelik', 'Bursa', 'Nilüfer', 9100.00),
+('Ali', 'Şahin', 'Antalya', 'Muratpaşa', 4300.25),
+('Emre', 'Aydın', 'İstanbul', 'Ümraniye', 11200.00),
+('Zeynep', 'Koç', 'Konya', 'Selçuklu', 3200.00),
+('Murat', 'Arslan', 'Adana', 'Seyhan', 7800.40),
+('Elif', 'Polat', 'Gaziantep', 'Şahinbey', 6500.00),
+('Can', 'Öztürk', 'İstanbul', 'Bakırköy', 15000.00),
+
+('Burak', 'Güneş', 'Kocaeli', 'İzmit', 4900.00),
+('Selin', 'Aksoy', 'Eskişehir', 'Odunpazarı', 3700.80),
+('Hakan', 'Yıldırım', 'Kayseri', 'Melikgazi', 8600.00),
+('Derya', 'Bulut', 'Tekirdağ', 'Çorlu', 2800.00),
+('Serkan', 'Kurt', 'Samsun', 'Atakum', 7200.90),
+('Merve', 'Doğan', 'Trabzon', 'Ortahisar', 5100.00),
+('Onur', 'Eren', 'Balıkesir', 'Edremit', 3400.00),
+('Cem', 'Uslu', 'Denizli', 'Pamukkale', 6300.60),
+('Pınar', 'Yalçın', 'Aydın', 'Efeler', 2950.00),
+('Kadir', 'Bozkurt', 'Manisa', 'Şehzadeler', 4700.00),
+
+('Oğuz', 'Tekin', 'Sakarya', 'Adapazarı', 3900.00),
+('Seda', 'Erdoğan', 'Mersin', 'Yenişehir', 8200.00),
+('Tolga', 'Karaman', 'Çorum', 'Merkez', 2600.00),
+('Büşra', 'Sever', 'Kütahya', 'Merkez', 1850.00),
+('Volkan', 'Taş', 'Isparta', 'Merkez', 4100.00),
+('İrem', 'Bayrak', 'Afyonkarahisar', 'Merkez', 3500.00),
+('Eren', 'Önal', 'Düzce', 'Merkez', 2300.00),
+('Gamze', 'Şimşek', 'Ordu', 'Altınordu', 5400.00),
+('Levent', 'Keskin', 'Uşak', 'Merkez', 3100.00),
+('Nazlı', 'Yavuz', 'Edirne', 'Merkez', 6900.00);
+-------------------------------------------------
+INSERT INTO Products
+(ProductName, ProductPrice, ProductStock, CategoryId)
+VALUES
+('Lenovo ThinkPad E14', 28500.00, 15, 2),
+('Dell Inspiron 15', 26400.00, 12, 2),
+('Asus TUF Gaming F15', 34500.00, 8, 2),
+('HP ProDesk 400', 22900.00, 10, 3),
+('MSI Gaming Masaüstü', 41200.00, 5, 3),
+
+('Samsung 24" Monitör', 5200.00, 20, 4),
+('LG UltraWide 29"', 8900.00, 7, 4),
+('AOC 27" Curved', 7600.00, 9, 4),
+
+('Logitech K120 Klavye', 650.00, 50, 5),
+('Razer BlackWidow', 4200.00, 6, 5),
+
+('Logitech M220 Mouse', 450.00, 60, 6),
+('SteelSeries Rival 3', 1800.00, 14, 6),
+
+('HP LaserJet Pro Yazıcı', 9800.00, 5, 7),
+('Canon Pixma G3420', 7200.00, 7, 7),
+
+('Epson Perfection Tarayıcı', 6400.00, 4, 8),
+
+('TP-Link Archer C6 Router', 1800.00, 25, 9),
+('Cisco Small Business Switch', 12500.00, 6, 9),
+
+('Dell PowerEdge T40', 46500.00, 3, 10),
+
+('Seagate 1TB HDD', 1900.00, 40, 11),
+('WD Blue 2TB HDD', 3100.00, 22, 11),
+
+('Samsung T7 1TB Harici Disk', 4200.00, 18, 12),
+
+('Kingston NV2 500GB SSD', 2100.00, 35, 13),
+('Samsung 980 Pro 1TB SSD', 5200.00, 16, 13),
+
+('Corsair 16GB DDR4 RAM', 1850.00, 28, 14),
+('Kingston Fury 32GB RAM', 3600.00, 12, 14),
+
+('Nvidia RTX 4060', 18500.00, 6, 15),
+('AMD Radeon RX 6700 XT', 17200.00, 4, 15),
+
+('Asus B550 Anakart', 5400.00, 9, 16),
+('MSI Z690 Anakart', 8200.00, 5, 16),
+
+('Intel i5 12400F', 7200.00, 14, 17),
+('AMD Ryzen 7 5800X', 9600.00, 7, 17),
+
+('Corsair 750W PSU', 4200.00, 11, 18),
+('Cooler Master 650W PSU', 3500.00, 13, 18),
+
+('NZXT H510 Kasa', 3900.00, 10, 19),
+('Corsair iCUE 4000X', 5600.00, 6, 19),
+
+('Laptop Çantası 15.6"', 850.00, 45, 20),
+('USB-C Çoklayıcı', 1200.00, 38, 20),
+('Kablosuz Kulaklık', 2400.00, 22, 20),
+('Webcam Full HD', 1950.00, 17, 20),
+('Bluetooth Hoparlör', 3100.00, 9, 20),
+('Apple Magic Mouse', 3200.00, 8, 6),
+('Logitech MX Master 3S', 5400.00, 6, 6),
+
+('HP 27" IPS Monitör', 8600.00, 7, 4),
+
+('Intel i7 13700K', 14200.00, 5, 17),
+
+('Gigabyte RTX 4070', 26500.00, 3, 15),
+
+('Crucial 32GB DDR5 RAM', 6100.00, 9, 14),
+
+('Samsung 990 Pro 2TB SSD', 11800.00, 4, 13),
+
+('Frisby 700W Güç Kaynağı', 2900.00, 11, 18),
+
+('Thermaltake View 51 Kasa', 7200.00, 4, 19),
+
+('USB 3.0 Harici DVD Writer', 1850.00, 15, 20);
+---------------------------------------------------
+INSERT INTO Orders
+(ProductId, CustomerId, OrderCount, UnitPrice, TotalPrice, OrderDate)
+VALUES
+(1, 1, 1, 28500.00, 28500.00, '2024-01-05'),
+(2, 2, 2, 26400.00, 52800.00, '2024-01-18'),
+(3, 3, 1, 34500.00, 34500.00, '2024-02-02'),
+(4, 4, 3, 22900.00, 68700.00, '2024-02-14'),
+(5, 5, 1, 41200.00, 41200.00, '2024-02-27'),
+
+(6, 6, 2, 5200.00, 10400.00, '2024-03-04'),
+(7, 7, 1, 8900.00, 8900.00, '2024-03-11'),
+(8, 8, 2, 7600.00, 15200.00, '2024-03-22'),
+(9, 9, 5, 650.00, 3250.00, '2024-04-01'),
+(10, 10, 1, 4200.00, 4200.00, '2024-04-09'),
+
+(11, 11, 4, 450.00, 1800.00, '2024-04-18'),
+(12, 12, 2, 1800.00, 3600.00, '2024-04-26'),
+(13, 13, 1, 9800.00, 9800.00, '2024-05-03'),
+(14, 14, 1, 7200.00, 7200.00, '2024-05-12'),
+(15, 15, 1, 6400.00, 6400.00, '2024-05-21'),
+
+(16, 16, 3, 1800.00, 5400.00, '2024-06-02'),
+(17, 17, 1, 12500.00, 12500.00, '2024-06-10'),
+(18, 18, 1, 46500.00, 46500.00, '2024-06-19'),
+(19, 19, 4, 1900.00, 7600.00, '2024-06-28'),
+(20, 20, 2, 3100.00, 6200.00, '2024-07-05'),
+
+(21, 21, 1, 4200.00, 4200.00, '2024-07-13'),
+(22, 22, 2, 2100.00, 4200.00, '2024-07-21'),
+(23, 23, 1, 5200.00, 5200.00, '2024-07-29'),
+(24, 24, 3, 1850.00, 5550.00, '2024-08-04'),
+(25, 25, 1, 3600.00, 3600.00, '2024-08-12'),
+
+(26, 26, 1, 18500.00, 18500.00, '2024-08-19'),
+(27, 27, 1, 17200.00, 17200.00, '2024-08-27'),
+(28, 28, 2, 5400.00, 10800.00, '2024-09-03'),
+(29, 29, 1, 8200.00, 8200.00, '2024-09-11'),
+(30, 30, 2, 7200.00, 14400.00, '2024-09-20'),
+
+(31, 1, 1, 9600.00, 9600.00, '2024-09-28'),
+(32, 2, 3, 4200.00, 12600.00, '2024-10-05'),
+(33, 3, 2, 3500.00, 7000.00, '2024-10-12'),
+(34, 4, 1, 3900.00, 3900.00, '2024-10-18'),
+(35, 5, 1, 5600.00, 5600.00, '2024-10-25'),
+
+(36, 6, 2, 850.00, 1700.00, '2024-11-02'),
+(37, 7, 3, 1200.00, 3600.00, '2024-11-09'),
+(38, 8, 1, 2400.00, 2400.00, '2024-11-16'),
+(39, 9, 1, 1950.00, 1950.00, '2024-11-23'),
+(40, 10, 2, 3100.00, 6200.00, '2024-11-30'),
+
+(41, 11, 1, 3200.00, 3200.00, '2024-12-03'),
+(42, 12, 1, 5400.00, 5400.00, '2024-12-06'),
+(43, 13, 1, 8600.00, 8600.00, '2024-12-10'),
+(44, 14, 1, 14200.00, 14200.00, '2024-12-14'),
+(45, 15, 1, 26500.00, 26500.00, '2024-12-18'),
+
+(46, 16, 1, 6100.00, 6100.00, '2024-12-21'),
+(47, 17, 1, 11800.00, 11800.00, '2024-12-24'),
+(48, 18, 2, 2900.00, 5800.00, '2024-12-26'),
+(49, 19, 1, 7200.00, 7200.00, '2024-12-28'),
+(50, 20, 1, 1850.00, 1850.00, '2024-12-31');
+-------------------------------------------
+INSERT INTO Activities
+(Title, Description, ActivityTime)
+VALUES
+('Haftalık Operasyon Topl', 'Haftalık plan değerlendirme', '09:30'),
+
+('Depo Sevkiyat Hazırlık', 'Günlük sipariş paketleme', '11:00'),
+
+('Mal Alım Kontrol Süreci', 'Tedarikçi ürün kontrolü', '13:45'),
+
+('Kargo Teslimat Takibi', 'Gönderilen kargo kontrol', '15:15'),
+
+('Gün Sonu Stok Raporu', 'Stok ve hareket raporu', '17:30');
+---------------------------------------------------------------------
+INSERT INTO Todos
+(Description, Status)
+VALUES
+('Günlük stok girişlerini sistemde kontrol et', 1),
+('Eksik ürünler için satın alma talebi oluştur', 0),
+('Depo raf düzenini güncel plana göre düzenle', 1),
+('Bekleyen müşteri siparişlerini sevkiyata hazırla', 0),
+('Haftalık satış raporunu yönetim için hazırla', 1),
+
+('Kritik stok seviyesindeki ürünleri listele', 1),
+('Tedarikçi faturalarını muhasebeye ilet', 0),
+('İade gelen ürünlerin kalite kontrolünü yap', 1),
+('ERP sisteminde ürün fiyatlarını güncelle', 0),
+('Kargo firmasıyla teslimat sürecini değerlendir', 1),
+
+('Ay sonu stok sayımı için ekip planlaması yap', 0),
+('Yeni gelen ürünleri barkodlayıp sisteme ekle', 1),
+('Depo güvenlik kamera kontrollerini gerçekleştir', 1),
+('Satış sonrası müşteri geri bildirimlerini incele', 0),
+('Yedekleme işlemlerinin sorunsuz çalıştığını kontrol et', 1);
+-----------------------------------------------------------------

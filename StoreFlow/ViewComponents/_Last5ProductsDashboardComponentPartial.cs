@@ -1,0 +1,21 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using StoreFlow.Context;
+
+namespace StoreFlow.ViewComponents
+{
+    public class _Last5ProductsDashboardComponentPartial:ViewComponent
+    {
+        private readonly StoreContext _context;
+
+        public _Last5ProductsDashboardComponentPartial(StoreContext context)
+        {
+            _context = context;
+        }
+
+        public IViewComponentResult Invoke()
+        {
+            var values=_context.Products.OrderBy(p => p.ProductId).ToList().SkipLast(5).ToList().TakeLast(7).ToList();
+            return View(values);
+        }
+    }
+}

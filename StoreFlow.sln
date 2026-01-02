@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreFlow", "StoreFlow\StoreFlow.csproj", "{B8A7EDB4-3489-4322-B53E-B6E23A46DA60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8A7EDB4-3489-4322-B53E-B6E23A46DA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A7EDB4-3489-4322-B53E-B6E23A46DA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A7EDB4-3489-4322-B53E-B6E23A46DA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A7EDB4-3489-4322-B53E-B6E23A46DA60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C18C4BE-2E00-46A3-997D-5DC3650B3356}
+	EndGlobalSection
+EndGlobal
