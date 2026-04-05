@@ -1,6 +1,6 @@
 # 📊 EntityFramework DashBoard
 
-ASP.NET Core ve Entity Framework Core kullanılarak 70+ LINQ ve EF Core metodunun uygulamalı olarak ele alındığı kapsamlı bir proje serisidir.
+ASP.NET Core ve Entity Framework Core kullanılarak 70+ LINQ ve EF Core metodunun uygulamalı olarak ele alındığı kapsamlı bir projedir.
 ---
 
 ## 🚀 Kullanılan Teknolojiler
